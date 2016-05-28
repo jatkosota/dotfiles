@@ -1,0 +1,12 @@
+[submodule ".spacemacs.d"]
+	path = .spacemacs.d
+	url = https://github.com/jatkosota/.spacemacs.d
+   	ignore = dirty
+[submodule ".vimperator/vimperator-plugins"]
+	path = .vimperator/vimperator-plugins
+	url = https://github.com/vimpr/vimperator-plugins
+    	ignore = dirty
+[submodule ".emacs.d"]
+	path = .emacs.d
+	url = https://github.com/syl20bnr/spacemacs
+   	ignore = dirty
