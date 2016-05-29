@@ -82,6 +82,7 @@ js <<EOM
 liberator.globalVariables.plugin_loader_plugins = [
     "caret_hint",
     "copy",
+    "forcefocuscontent",
 ];
 EOM
 
