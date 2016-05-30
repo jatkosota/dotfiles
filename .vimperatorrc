@@ -44,6 +44,10 @@ nmap <C-j> <Nop>
 cmap <C-j> <Nop>
 imap <C-j> <Nop>
 
+" 候補選択を <C-n> <C-p> で行う
+cmap <C-n> <TAB>
+cmap <C-p> <S-TAB>
+
 " l で次のタブ, h で前のタブに移動できるようにする
 " nnoremap l gt
 " nnoremap h gT
@@ -56,6 +60,9 @@ nnoremap l 2l
 
 " ブラウザ再起動
 nnoremap <C-r> :restart<CR>
+
+" 検索
+nnoremap s :tabopen<Space>google<Space>
 
 " ダウンロードタブを表示
 noremap <C-d> :downloads<CR>
