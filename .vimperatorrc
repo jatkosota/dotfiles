@@ -79,8 +79,8 @@ imap <C-f> <RIGHT>
 set visualbell
 highlight Bell display:none
 
-" 表示する GUI 要素はタブとナビゲーションバーのみ
-set gui=none,tabs,navigation
+" 表示する GUI 要素はタブのみ
+set gui=none,tabs
 
 """ プラグインの設定
 " plugin_loader.js
