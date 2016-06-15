@@ -16,6 +16,9 @@ set hintchars=ifjklasdhguonmerwc
 " 外部エディタを emacs に設定する
 set editor="/usr/bin/emacsclient"
 
+" ページ全体で検索語を強調表示
+set hlsearch
+
 "============================
 " colorscheme
 "============================
@@ -44,9 +47,16 @@ nmap <C-j> <Nop>
 cmap <C-j> <Nop>
 imap <C-j> <Nop>
 
-" 候補選択を <C-n> <C-p> で行う
-cmap <C-n> <TAB>
-cmap <C-p> <S-TAB>
+" コマンドモードで候補選択を <C-n> <C-p> で行う
+cnoremap <C-n> <TAB>
+cnoremap <C-p> <S-TAB>
+
+" コマンドモードでカーソル移動
+cnoremap <C-f> <RIGHT>
+cnoremap <C-b> <LEFT>
+
+" コマンドモードで貼り付け
+cnoremap <C-y> <C-v>
 
 " l で次のタブ, h で前のタブに移動できるようにする
 " nnoremap l gt
@@ -71,8 +81,10 @@ noremap <C-d> :downloads<CR>
 noremap <C-q> :wqall<CR>
 
 " INSERTモードでのカーソル移動
-imap <C-b> <LEFT>
-imap <C-f> <RIGHT>
+inoremap <C-b> <LEFT>
+inoremap <C-f> <RIGHT>
+inoremap <C-p> <UP>
+inoremap <C-n> <DOWN>
 
 """ UI
 " ビジュアルベルを表示しない
