@@ -86,6 +86,10 @@ inoremap <C-f> <RIGHT>
 inoremap <C-p> <UP>
 inoremap <C-n> <DOWN>
 
+" apptabを割り当てる
+nnoremap @ :set<Space>apptab<CR>
+nnoremap <C-@> :set<Space>apptab!<CR>
+
 """ UI
 " ビジュアルベルを表示しない
 set visualbell
