@@ -72,7 +72,7 @@ nnoremap l 2l
 nnoremap <C-r> :restart<CR>
 
 " 検索
-nnoremap s :tabopen<Space>google<Space>
+nnoremap s :tabopen<Space>duckduckgo<Space>
 
 " ダウンロードタブを表示
 noremap <C-d> :downloads<CR>
@@ -106,6 +106,7 @@ liberator.globalVariables.plugin_loader_plugins = [
     "caret_hint",
     "copy",
     "forcefocuscontent",
+    "embed-esc",
 ];
 EOM
 
