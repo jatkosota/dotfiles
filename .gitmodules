@@ -2,3 +2,6 @@
 	path = .vimperator/vimperator-plugins
 	url = https://github.com/vimpr/vimperator-plugins
     	ignore = dirty
+[submodule ".emacs.d"]
+	path = .emacs.d
+	url = https://github.com/jatkosota/.emacs.d.git
